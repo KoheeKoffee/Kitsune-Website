@@ -2,7 +2,7 @@
 
     body {
       font-family: 'Courier New', Courier, monospace;
-      background: #ffffff;
+      background: #D194A4;
       color: #000000;
       font-size: 14px;
     }
@@ -12,42 +12,54 @@
       position: sticky;
       align-items: center;
       justify-content: space-between;
-      padding: 10px 20px;
-      border-bottom: 1px solid #ccc;
-      background: #fff;
+      padding: 40px 40px;
+      border-bottom: 1px solid lch(0% 0 0);
+      background: #722F37;
     }
+
     .nav-brand {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 20px;
     }
+
     .nav-logo {
-      width: 34px;
-      height: 34px;
+      width: 75px;
+      height: 75px;
       border-radius: 50%;
-      background: #ccc;
+      background: #cccccc00;
     }
+
+    .nav-logo img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
     .nav-brand-text {
-      font-size: 11px;
+      font-size: 20px;
       font-weight: bold;
       line-height: 1.2;
       letter-spacing: 1px;
     }
+
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 18px;
+      gap: 80px;
       list-style: none;
     }
+
     .nav-links a {
       color: #000;
       text-decoration: none;
-      font-size: 13px;
+      font-size: 25px;
     }
+
     .btn-login {
       border: 1px solid #000;
       padding: 4px 14px;
-      font-size: 12px;
+      font-size: 25px;
       font-weight: bold;
       background: #000;
       color: #fff;
@@ -63,26 +75,32 @@
       padding: 30px 20px;
       gap: 20px;
     }
+
     .hero-text { flex: 1; }
     .hero-text h1 {
-      font-size: 28px;
+      font-size: 49px;
       font-weight: 900;
       letter-spacing: 1px;
       margin-bottom: 12px;
       font-style: italic;
     }
+
     .hero-text p {
-      font-size: 13px;
+      font-size: 24px;
       line-height: 1.7;
       margin-bottom: 8px;
+      font-weight: 600;
     }
+
     .hero-text ul {
       list-style: disc;
       padding-left: 16px;
       margin-bottom: 8px;
-      font-size: 13px;
+      font-size: 24px;
       line-height: 1.8;
+      font-weight: 600;
     }
+
     .hero-img {
       width: 200px;
       height: 200px;
@@ -90,18 +108,20 @@
       flex-shrink: 0;
       align-self: center;
     }
+
     .hero-img img {
       width: 100%;
       height: 100%;
       object-fit: contain;
     }
+
     .btn-see-deals {
       display: inline-block;
       margin-top: 14px;
       background: #000;
       color: #fff;
       padding: 8px 18px;
-      font-size: 12px;
+      font-size: 24px;
       font-weight: bold;
       letter-spacing: 1px;
       font-family: inherit;
@@ -110,14 +130,15 @@
     }
 
     .banner {
-      background: #000;
-      width: 100%;
-      height: 627px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      width: 90%;
+      max-width: 1280px;
+      height: 500px;
+      margin: 20px auto;
+      border-radius: 16px;
+      border: 4px solid #c0475b;
+      overflow: hidden;
     }
+
     .banner img {
     width: 100%;
     height: 100%;
@@ -126,89 +147,109 @@
 
     .about {
       padding: 30px 20px;
-      background: #f0f0f0;
+      background: #D194A4;
     }
+
     .about h2 {
       text-align: center;
-      font-size: 22px;
+      font-size: 49px;
       font-weight: bold;
       margin-bottom: 20px;
       font-style: italic;
     }
+
     .about-inner {
-      background: #c8c8c8;
+      background: #0000008e;
       padding: 24px 30px;
-      max-width: 680px;
+      max-width: 980px;
       margin: 0 auto;
       text-align: center;
-      font-size: 13px;
+      font-size: 24px;
       line-height: 1.8;
     }
-    .about-inner p { margin-bottom: 10px; }
-    .about-games { margin: 10px 0; line-height: 2; }
+
+    .about-inner p { margin-bottom: 10px; font-weight: 600; }
+    .about-games { margin: 10px 0; line-height: 2; font-weight: 600; }
 
     .incoming {
       padding: 30px 20px;
-      background: #fff;
+      background: #D194A4;
     }
+
     .incoming h2 {
       text-align: center;
-      font-size: 20px;
+      font-size: 49px;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 35px;
       font-style: italic;
     }
+
     .games-grid {
       display: flex;
-      gap: 16px;
+      gap: 100px;
+      border-radius: 16px;
+      border: 4px solid #c0475b;
       justify-content: center;
       flex-wrap: wrap;
     }
-    .game-card { width: 160px; text-align: center; }
+    
+    .game-card { width: 400px; text-align: center; }
     .game-thumb {
-      width: 160px;
-      height: 130px;
+      width: 400px;
+      height: 400px;
       background: #000;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
     }
-    .game-name { font-size: 12px; font-weight: bold; margin-bottom: 2px; }
-    .coming-soon { font-size: 11px; letter-spacing: 1px; }
+
+    .game-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .game-name { font-size: 24px; font-weight: bold; margin-bottom: 6px; }
+    .coming-soon { font-size: 24px; letter-spacing: 4px; }
 
     .reviews {
       padding: 30px 20px;
-      background: #f0f0f0;
+      background: #D194A4;
     }
+
     .reviews h2 {
       text-align: center;
-      font-size: 20px;
+      font-size: 49px;
       font-weight: 900;
       letter-spacing: 2px;
       margin-bottom: 20px;
     }
+
     .reviews-grid {
       display: flex;
-      gap: 12px;
+      gap: 90px;
       justify-content: center;
       flex-wrap: wrap;
     }
+    
     .review-card {
       background: #fff;
       border: 1px solid #ccc;
       padding: 14px;
-      width: 190px;
-      font-size: 12px;
+      width: 550px;
+      font-size: 24px;
     }
+
     .review-quote { font-weight: bold; margin-bottom: 10px; }
     .reviewer { display: flex; align-items: center; gap: 8px; }
     .reviewer-avatar {
-      width: 26px;
-      height: 26px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       background: #555;
       flex-shrink: 0;
     }
-    .reviewer-name { font-size: 10px; font-weight: bold; }
-    .reviewer-role { font-size: 10px; color: #555; }
+
+    .reviewer-name { font-size: 18px; font-weight: bold; }
+    .reviewer-role { font-size: 16px; color: #555; }
 
     .leave-review {
       display: flex;
@@ -221,13 +262,15 @@
       gap: 20px;
       flex-wrap: wrap;
     }
+
     .leave-review h3 {
-      font-size: 18px;
+      font-size: 30px;
       font-weight: bold;
       font-style: italic;
-      max-width: 220px;
+      max-width: 271px;
     }
-    .leave-review-btns { display: flex; gap: 10px; }
+
+    .leave-review-btns { display: flex; gap: 95px; }
     .btn-solid {
       background: #000;
       color: #fff;
@@ -239,6 +282,7 @@
       letter-spacing: 1px;
       cursor: pointer;
     }
+
     .btn-hollow {
       background: #fff;
       color: #000;
@@ -253,15 +297,17 @@
 
     .suggestions {
       padding: 30px 20px;
-      background: #fff;
+      background: #D194A4;
       text-align: center;
     }
+
     .suggestions h2 {
-      font-size: 20px;
+      font-size: 49px;
       font-weight: 900;
       letter-spacing: 2px;
       margin-bottom: 20px;
     }
+
     .suggestions-inner {
       display: flex;
       gap: 20px;
@@ -269,20 +315,30 @@
       align-items: flex-start;
       flex-wrap: wrap;
     }
+
     .suggestions-box {
-      background: #555;
+      background: #722F37;
       color: #fff;
       padding: 20px;
-      max-width: 260px;
+      max-width: 450px;
       text-align: left;
-      font-size: 13px;
+      font-size: 27px;
       line-height: 1.7;
     }
+
     .suggestions-char {
-      width: 140px;
-      height: 180px;
-      background: #d9d9d9;
+      width: 407px;
+      height: 407px;
+      margin-left: -105px;
+      background: #ffffff00;
     }
+
+    .suggestions-char img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    }
+
     .suggestions-btns {
       display: flex;
       gap: 10px;
@@ -294,26 +350,26 @@
       color: #fff;
       border: none;
       padding: 7px 16px;
-      font-size: 12px;
+      font-size: 18px;
       font-weight: bold;
       font-family: inherit;
       letter-spacing: 1px;
       cursor: pointer;
     }
+
     .btn-direct {
-      background: transparent;
-      color: #fff;
+      background: #ffffff;
+      color: #000000;
       border: 1px solid #fff;
       padding: 7px 14px;
-      font-size: 11px;
+      font-size: 18px;
       font-weight: bold;
       font-family: inherit;
       cursor: pointer;
     }
 
-
     footer {
-      background: #222;
+      background: #722F37;
       color: #fff;
       padding: 20px;
       position: sticky;
@@ -322,15 +378,133 @@
       gap: 80px;
       font-size: 12px;
     }
-    .footer-brand { font-weight: bold; font-size: 12px; letter-spacing: 1px; }
+    .footer-brand { font-weight: bold; font-size: 18px; letter-spacing: 1px; }
     .footer-links { display: flex; flex-direction: column; gap: 6px; }
-    .footer-links a { color: #ccc; text-decoration: none; font-size: 11px; }
+    .footer-links a { color: #ccc; text-decoration: none; font-size: 16px; }
     .footer-links a:hover { text-decoration: underline; }
     .footer-copy {
       background: #111;
       text-align: center;
       color: #888;
       font-size: 11px;
-      padding: 8px;
+      padding: 1px;
       font-family: 'Courier New', monospace;
     }
+
+    .parallax-slideshow {
+      position: relative;
+      overflow: hidden;
+      height: 700px;
+      border: 4px solid #000000;
+      background: #722F37;
+      border-radius: 16px;
+    }
+
+    .parallax-slideshow .slide {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      opacity: 0;
+      transform: scale(1.1);
+      z-index: 1;
+      transition: opacity 1.5s ease, transform 1.5s ease;
+    }
+
+    .parallax-slideshow .slide.active {
+      opacity: 1;
+      transform: scale(1);
+      z-index: 5;
+    }
+
+    .parallax-slideshow .game-card {
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      color: #fff;
+    }
+
+    .parallax-slideshow .game-card:hover {
+      transform: translateY(-10px) scale(1.05);
+    }
+
+    .parallax-slideshow .game-thumb {
+      width: 300px;
+      height: 300px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 3px solid #000000;
+    }
+
+    .parallax-slideshow .game-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      font-size: 48px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .carousel-btn:hover {
+      background: rgba(0, 0, 0, 0.8);
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .carousel-btn.prev {
+      left: 50px;
+    }
+    .carousel-btn.next {
+      right: 50px;
+    }
+
+    .slide-bars {
+      position: absolute;
+      bottom: 25px;
+      width: 100%;
+      text-align: center;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .slide-bars .bar {
+      display: inline-block;
+      width: 60px;
+      height: 10px;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.4s ease, transform 0.3s ease;
+    }
+
+    .slide-bars .bar:hover {
+      background: rgba(255, 255, 255, 0.8);
+      transform: scaleX(1.1);
+    }
+
+    .slide-bars .bar.active {
+      background: #ffffff;
+      transform: scaleX(1.3);
+    } 

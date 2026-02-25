@@ -7,20 +7,20 @@
   <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
-
 <nav>
   <div class="nav-brand">
-    <div class="nav-logo"></div>
+    <div class="nav-logo">
+      <img src="images/logo.png" alt="nav_logo" />
+    </div>
     <div class="nav-brand-text">KITSUNE<br>COMMISSION</div>
   </div>
   <ul class="nav-links">
     <li><a href="#">Home</a></li>
     <li><a href="#">Deals</a></li>
     <li><a href="#">Services</a></li>
-    <li><button class="btn-login">LOG IN</button></li>
+    <li><button class="btn-login">LOGIN</button></li>
   </ul>
 </nav>
-
 <div class="hero">
   <div class="hero-text">
     <h1>WELCOME!</h1>
@@ -41,7 +41,6 @@
 <div class="banner">
   <img src="images/banner.png" alt="Banner" />
 </div>
-
 <div class="about">
   <h2>About Us</h2>
   <div class="about-inner">
@@ -57,28 +56,72 @@
     <p>Thanks for supporting my small business. Let's make your gaming life easier!</p>
   </div>
 </div>
-
 <div class="incoming">
   <h2>Incoming Games for Future Commissioning</h2>
-  <div class="games-grid">
-    <div class="game-card">
-      <div class="game-thumb"></div>
-      <div class="game-name">Arknights Endfield</div>
-      <div class="coming-soon">COMING SOON</div>
+  <div class="parallax-slideshow">
+    <div class="slide active">
+      <div class="game-card">
+        <div class="game-thumb"><img src="images/endfield.png" alt="Arknights Endfield" /></div>
+        <div class="game-name">Arknights Endfield</div>
+        <div class="coming-soon">COMING SOON</div>
+      </div>
+      <div class="game-card">
+        <div class="game-thumb"><img src="images/pgr.png" alt="Punishing Gray Raven" /></div>
+        <div class="game-name">Punishing Gray Raven</div>
+        <div class="coming-soon">COMING SOON</div>
+      </div>
+      <div class="game-card">
+        <div class="game-thumb"><img src="images/fgo.png" alt="Fate Grand Order" /></div>
+        <div class="game-name">Fate/GO</div>
+        <div class="coming-soon">COMING SOON</div>
+      </div>
     </div>
-    <div class="game-card">
-      <div class="game-thumb"></div>
-      <div class="game-name">Punishing Gray Raven</div>
-      <div class="coming-soon">COMING SOON</div>
+
+    <div class="slide">
+      <div class="game-card">
+        <div class="game-thumb"><img src="images/duet.jpg" alt="Duet Night Abyss" /></div>
+        <div class="game-name">Duet Night Abyss</div>
+        <div class="coming-soon">COMING SOON</div>
+      </div>
+      <div class="game-card">
+        <div class="game-thumb"><img src="images/arknights.jpg" alt="Arknights" /></div>
+        <div class="game-name">Arknights</div>
+        <div class="coming-soon">COMING SOON</div>
+      </div>
+      <div class="game-card">
+        <div class="game-thumb"><img src="images/reverse.png" alt="Reverse 1999" /></div>
+        <div class="game-name">Reverse 1999</div>
+        <div class="coming-soon">COMING SOON</div>
+      </div>
     </div>
-    <div class="game-card">
-      <div class="game-thumb"></div>
-      <div class="game-name">Fate/GO</div>
-      <div class="coming-soon">COMING SOON</div>
+
+    <div class="slide">
+      <div class="game-card">
+        <div class="game-thumb"><img src="images/silver.jpg" alt="Silver Palace" /></div>
+        <div class="game-name">Silver Palace</div>
+        <div class="coming-soon">COMING SOON</div>
+      </div>
+      <div class="game-card">
+        <div class="game-thumb"><img src="images/limbus.png" alt="Limbus Company" /></div>
+        <div class="game-name">Limbus Company</div>
+        <div class="coming-soon">COMING SOON</div>
+      </div>
+      <div class="game-card">
+        <div class="game-thumb"><img src="images/uma.png" alt="Umamusume" /></div>
+        <div class="game-name">Umamusume: Pretty Derby</div>
+        <div class="coming-soon">COMING SOON</div>
+      </div>
     </div>
+
+    <button class="carousel-btn prev">❮</button>
+    <button class="carousel-btn next">❯</button>
+  <div class="slide-bars">
+  <span class="bar active" data-slide="0"></span>
+  <span class="bar" data-slide="1"></span>
+  <span class="bar" data-slide="2"></span>
+  </div>
   </div>
 </div>
-
 <div class="reviews">
   <h2>REVIEWS &amp; SUGGESTIONS</h2>
   <div class="reviews-grid">
@@ -87,8 +130,8 @@
       <div class="reviewer">
         <div class="reviewer-avatar"></div>
         <div>
-          <div class="reviewer-name">DEFINITELY-NOT-VERBL</div>
-          <div class="reviewer-role">Mandela's Hunter</div>
+          <div class="reviewer-name">DEFINITELY-NOT-VERGIL</div>
+          <div class="reviewer-role">Mandarin Hunter</div>
         </div>
       </div>
     </div>
@@ -97,7 +140,7 @@
       <div class="reviewer">
         <div class="reviewer-avatar"></div>
         <div>
-          <div class="reviewer-name">Claire Zuo</div>
+          <div class="reviewer-name">Citam Zoir</div>
           <div class="reviewer-role">You Bad People</div>
         </div>
       </div>
@@ -107,36 +150,35 @@
       <div class="reviewer">
         <div class="reviewer-avatar"></div>
         <div>
-          <div class="reviewer-name">YAC</div>
-          <div class="reviewer-role">Daily Scroll</div>
+          <div class="reviewer-name">YAE</div>
+          <div class="reviewer-role">Lady Gujii</div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 <div class="leave-review">
   <h3>Want to Leave a Review?</h3>
   <div class="leave-review-btns">
-    <button class="btn-solid">LOG IN</button>
+    <button class="btn-solid">LOGIN</button>
     <button class="btn-hollow">SIGN UP</button>
   </div>
 </div>
-
 <div class="suggestions">
   <h2>ANY SUGGESTIONS?</h2>
   <div class="suggestions-inner">
     <div class="suggestions-box">
-      Have a game in mind you'd love to see commissioned next? Share your suggestions—we're always excited to hear your ideas!
+      Have a game in mind you'd love to see commissioned next? Share your suggestions we're always excited to hear your ideas!
       <div class="suggestions-btns">
         <button class="btn-share">SHARE</button>
         <button class="btn-direct">SEND DIRECT SUGGESTION</button>
       </div>
     </div>
-    <div class="suggestions-char"></div>
+    <div class="suggestions-char">
+      <img src="images/yae1.png" alt="yae_char" />
+    </div>
   </div>
 </div>
-
 <footer>
   <div class="footer-brand">KITSUNE COMMISSION</div>
   <div class="footer-links">
@@ -150,6 +192,6 @@
   </div>
 </footer>
 <div class="footer-copy">© 2026 Kitsune Commission. All rights reserved.</div>
-
+<script src="./js/parallax.js"></script>
 </body>
 </html>
